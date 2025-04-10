@@ -1,14 +1,32 @@
+.page-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 #page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     font-size: 16px;
     font-family: sans-serif;
     max-width: 1000px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    display:flex;
+    flex-direction: column;
     background: #718AA0;
     padding: 0;
     margin: 0;
+    min-height: 100vh;
 }
 
 .title {
@@ -201,9 +219,9 @@ footer {
     padding: 10px 0;
     box-sizing: border-box;
     background: #A3BD92;
-    margin-top: 50px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     img {
         height: 80px;
